@@ -110,9 +110,11 @@ body {
 
         p {
             margin: 0;
+            margin-right: 10px;
         }
 
         small {
+            margin-top: 10px;
             grid-column: 2/3;
             font-size: 0.66em;
         }
@@ -135,12 +137,13 @@ body {
     }
 
     .img_carousel {
-
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
         width: 363px;
     }
 
     .star_img {
-        max-width: 23px;
+        max-width: 16px;
     }
 
     .cards_carousel {
@@ -160,40 +163,133 @@ body {
     }
 
     .carousel_card {
-
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         border-radius: 8px;
         width: 363px;
         height: 446px;
-        box-shadow: 
+        
         
 
         h3 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
             font-size: 1.166em;
             font-weight: 400;
         }
 
-        p{
-            font-size: 0.66em;
+        p{  
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 0.75em;
             font-weight: 400;
-            margin: 0;
+            
         }
 
         small {
+            font-weight: 400;
+            margin-left: 10px;
             font-size: 0.583em;
         }
 
         button {
+            float: right;
+            margin-right: 10px;
             font-size: 0.66em;
-            font-weight: 400;
+            font-weight: 700;
             width: 180px;
             height: 44px;
             color: white;
             background-color: $red;
+            border-radius: 3px;
 
         }
     }
 
+    .img_1 {
+        margin-left: 10px;
+    }
     .card_1 {
         margin-left: 52px;
     }
+
+    .dark_container {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        background-color: $dark;
+        height: 500px;
+        width: 100%;
+        color: white;
+        align-items: center;
+
+        p{
+            margin-top: 100px;
+            text-align: center;
+            font-size: 1.166em;
+            font-weight: 400;
+        }
+        
+        button {
+            font-size: 1em;
+            font-weight: 700;
+            width: 308px;
+            height: 66px;
+            border:solid $light;
+            border-radius: 3px;
+            color: $light;
+            background-color: $dark;
+            
+        }
+    }
+
+    .container_2 {
+
+        h2 {
+            text-align: start;
+            font-size: 1.33em;
+            font-weight: 700;
+        }
+
+        p{
+            margin-top: 0;
+            font-size: 1em;
+            font-weight: 400;
+        }
+
+        button {
+            margin-top: 30px;
+            font-size: 1em;
+            font-weight: 700;
+            width: 308px;
+            height: 66px;
+            border-radius: 3px;
+            color: white;
+            background-color: $red;
+        }
+    }
+
+    .right_container_2 {
+
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    .left_container_2 {
+
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    .footer
 }

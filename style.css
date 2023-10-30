@@ -88,8 +88,10 @@ body button {
 }
 .container_1 .review_1 p {
   margin: 0;
+  margin-right: 10px;
 }
 .container_1 .review_1 small {
+  margin-top: 10px;
   grid-column: 2/3;
   font-size: 0.66em;
 }
@@ -106,10 +108,12 @@ body button {
   font-size: 1.33em;
 }
 .container_1 .img_carousel {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   width: 363px;
 }
 .container_1 .star_img {
-  max-width: 23px;
+  max-width: 16px;
 }
 .container_1 .cards_carousel {
   display: flex;
@@ -125,29 +129,103 @@ body button {
   height: 0;
 }
 .container_1 .carousel_card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 8px;
   width: 363px;
   height: 446px;
-  box-shadow: h3;
-  box-shadow-font-size: 1.166em;
-  box-shadow-font-weight: 400;
+}
+.container_1 .carousel_card h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-size: 1.166em;
+  font-weight: 400;
 }
 .container_1 .carousel_card p {
-  font-size: 0.66em;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 0.75em;
   font-weight: 400;
-  margin: 0;
 }
 .container_1 .carousel_card small {
+  font-weight: 400;
+  margin-left: 10px;
   font-size: 0.583em;
 }
 .container_1 .carousel_card button {
+  float: right;
+  margin-right: 10px;
   font-size: 0.66em;
-  font-weight: 400;
+  font-weight: 700;
   width: 180px;
   height: 44px;
   color: white;
   background-color: #E3170A;
+  border-radius: 3px;
+}
+.container_1 .img_1 {
+  margin-left: 10px;
 }
 .container_1 .card_1 {
   margin-left: 52px;
+}
+.container_1 .dark_container {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  background-color: #011827;
+  height: 500px;
+  width: 100%;
+  color: white;
+  align-items: center;
+}
+.container_1 .dark_container p {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 1.166em;
+  font-weight: 400;
+}
+.container_1 .dark_container button {
+  font-size: 1em;
+  font-weight: 700;
+  width: 308px;
+  height: 66px;
+  border: solid #8ACFE5;
+  border-radius: 3px;
+  color: #8ACFE5;
+  background-color: #011827;
+}
+.container_1 .container_2 h2 {
+  text-align: start;
+  font-size: 1.33em;
+  font-weight: 700;
+}
+.container_1 .container_2 p {
+  margin-top: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+.container_1 .container_2 button {
+  margin-top: 30px;
+  font-size: 1em;
+  font-weight: 700;
+  width: 308px;
+  height: 66px;
+  border-radius: 3px;
+  color: white;
+  background-color: #E3170A;
+}
+.container_1 .right_container_2 {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+}
+.container_1 .left_container_2 {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
 }
