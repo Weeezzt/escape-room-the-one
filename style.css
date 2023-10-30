@@ -1,9 +1,153 @@
-* {
+body {
   margin: 0;
   padding: 0;
+  font-family: "roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+body button {
+  border-style: none;
+  border-radius: 3px;
+  margin: 0;
 }
 
 .header {
   background-color: #011827;
   width: 100%;
+  color: white;
+  height: 144px;
+  display: grid;
+  max-height: 150px;
+}
+.header div {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.header h1 {
+  font-size: 1em;
+  font-weight: 700;
+  max-width: 78px;
+  max-height: 84px;
+  margin: 0;
+}
+.header img {
+  margin: auto 10px;
+  width: 128px;
+}
+.header ul {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .header ul {
+    display: flex;
+  }
+}
+
+.container_1 {
+  background-color: white;
+  width: 100%;
+}
+.container_1 img {
+  width: 100%;
+}
+.container_1 .container_1_buttons {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+.container_1 .button_on-site {
+  font-size: 1em;
+  font-weight: 700;
+  width: 308px;
+  height: 66px;
+  color: #011827;
+  background-color: #8ACFE5;
+}
+.container_1 .button_online {
+  display: none;
+}
+.container_1 a {
+  display: block;
+  text-align: center;
+  color: #36769D;
+  font-size: 0.66em;
+  font-weight: 700;
+}
+.container_1 .container_1_reviews {
+  margin: 50px auto;
+}
+.container_1 .review_1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  font-weight: 400;
+  font-style: italic;
+  margin: auto 10px;
+}
+.container_1 .review_1 p {
+  margin: 0;
+}
+.container_1 .review_1 small {
+  grid-column: 2/3;
+  font-size: 0.66em;
+}
+.container_1 .review_image {
+  max-width: 73px;
+}
+.container_1 .review_2 {
+  display: none;
+}
+.container_1 h2 {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.33em;
+}
+.container_1 .img_carousel {
+  width: 363px;
+}
+.container_1 .star_img {
+  max-width: 23px;
+}
+.container_1 .cards_carousel {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  gap: 30px;
+}
+.container_1 .cards_carousel::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.container_1 .carousel_card {
+  border-radius: 8px;
+  width: 363px;
+  height: 446px;
+  box-shadow: h3;
+  box-shadow-font-size: 1.166em;
+  box-shadow-font-weight: 400;
+}
+.container_1 .carousel_card p {
+  font-size: 0.66em;
+  font-weight: 400;
+  margin: 0;
+}
+.container_1 .carousel_card small {
+  font-size: 0.583em;
+}
+.container_1 .carousel_card button {
+  font-size: 0.66em;
+  font-weight: 400;
+  width: 180px;
+  height: 44px;
+  color: white;
+  background-color: #E3170A;
+}
+.container_1 .card_1 {
+  margin-left: 52px;
 }
