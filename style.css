@@ -17,14 +17,25 @@ body button {
   width: 100%;
   color: white;
   height: 144px;
-  display: grid;
-  max-height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .header {
+    height: 216px;
+  }
 }
 .header div {
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
   justify-content: flex-start;
+}
+@media screen and (min-width: 1000px) {
+  .header div {
+    align-items: center;
+    margin: 0;
+  }
 }
 .header h1 {
   font-size: 1em;
@@ -33,30 +44,58 @@ body button {
   max-height: 84px;
   margin: 0;
 }
+@media screen and (min-width: 1000px) {
+  .header h1 {
+    max-width: 404px;
+    font-size: 1.66em;
+  }
+}
 .header img {
   margin: auto 10px;
   width: 128px;
 }
-.header ul {
-  display: none;
-}
-@media screen and (min-width: 480px) {
-  .header ul {
-    display: flex;
+@media screen and (min-width: 1000px) {
+  .header img {
+    margin: 20px;
   }
 }
-
+.header ul {
+  display: none;
+  padding: 0;
+  margin: auto 20px;
+  list-style: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+@media screen and (min-width: 1000px) {
+  .header ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.header li:hover {
+  color: #8ACFE5;
+  cursor: pointer;
+}
 .container_1 {
   background-color: white;
   width: 100%;
 }
 .container_1 img {
   width: 100%;
+  max-height: 468px;
+  z-index: 1;
 }
 .container_1 .container_1_buttons {
   display: flex;
   justify-content: center;
   margin: 30px auto;
+  z-index: 2;
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .container_1_buttons {
+    margin-top: 0;
+  }
 }
 .container_1 .button_on-site {
   font-size: 1em;
@@ -69,12 +108,29 @@ body button {
 .container_1 .button_online {
   display: none;
 }
+@media screen and (min-width: 1000px) {
+  .container_1 .button_online {
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    width: 308px;
+    height: 66px;
+    color: white;
+    background-color: #E3170A;
+    margin-right: 34px;
+  }
+}
 .container_1 a {
   display: block;
   text-align: center;
   color: #36769D;
   font-size: 0.66em;
   font-weight: 700;
+}
+@media screen and (min-width: 1000px) {
+  .container_1 a {
+    display: none;
+  }
 }
 .container_1 .container_1_reviews {
   margin: 50px auto;
@@ -184,6 +240,8 @@ body button {
   text-align: center;
   font-size: 1.166em;
   font-weight: 400;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 .container_1 .dark_container button {
   font-size: 1em;
@@ -264,6 +322,9 @@ footer a {
   font-weight: 400;
 }
 footer .online {
+  margin-top: 15px;
+}
+footer .facebook {
   margin-top: 15px;
 }
 footer .twitter {
