@@ -81,20 +81,36 @@ body button {
   background-color: white;
   width: 100%;
 }
-.container_1 img {
+.container_1 .hero {
   width: 100%;
-  max-height: 468px;
-  z-index: 1;
+  height: 276px;
+  background: url(Images/tech.png);
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .hero {
+    height: 480px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .container_1 .hero {
+    height: 360px;
+  }
 }
 .container_1 .container_1_buttons {
   display: flex;
   justify-content: center;
   margin: 30px auto;
-  z-index: 2;
 }
 @media screen and (min-width: 1000px) {
   .container_1 .container_1_buttons {
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .hero_buttons {
+    transform: translateY(-50%);
   }
 }
 .container_1 .button_on-site {
@@ -135,6 +151,13 @@ body button {
 .container_1 .container_1_reviews {
   margin: 50px auto;
 }
+@media screen and (min-width: 1000px) {
+  .container_1 .container_1_reviews {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px;
+  }
+}
 .container_1 .review_1 {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -153,9 +176,28 @@ body button {
 }
 .container_1 .review_image {
   max-width: 73px;
+  margin-left: 50px;
 }
 .container_1 .review_2 {
   display: none;
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .review_2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-weight: 400;
+    font-style: italic;
+    margin: auto 10px;
+  }
+  .container_1 .review_2 p {
+    margin: 0;
+    margin-right: 10px;
+  }
+  .container_1 .review_2 small {
+    margin-top: 10px;
+    grid-column: 2/3;
+    font-size: 0.66em;
+  }
 }
 .container_1 h2 {
   display: block;
@@ -179,6 +221,14 @@ body button {
   justify-content: flex-start;
   overflow-x: scroll;
   gap: 30px;
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .cards_carousel {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 85px;
+  }
 }
 .container_1 .cards_carousel::-webkit-scrollbar {
   width: 0;
@@ -236,12 +286,18 @@ body button {
   align-items: center;
 }
 .container_1 .dark_container p {
-  margin-top: 100px;
+  margin-top: 95px;
   text-align: center;
   font-size: 1.166em;
   font-weight: 400;
   margin-right: 15px;
   margin-left: 15px;
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .dark_container p {
+    margin-top: 125px;
+    width: 630px;
+  }
 }
 .container_1 .dark_container button {
   font-size: 1em;
@@ -273,6 +329,16 @@ body button {
   color: white;
   background-color: #E3170A;
 }
+.container_1 .container_2 img {
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .container_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 .container_1 .right_container_2 {
   margin-right: 20px;
   margin-left: 20px;
@@ -280,12 +346,30 @@ body button {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 1000px) {
+  .container_1 .right_container_2 {
+    width: 420px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .woman {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
 .container_1 .left_container_2 {
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 70px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .left_container_2 {
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 footer {

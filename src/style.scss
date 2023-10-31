@@ -1,5 +1,5 @@
 
-$medium-screen: 481px;
+$medium-screen: 750px;
 $larger-screen: 1000px;
 
 $dark: #011827;
@@ -95,20 +95,32 @@ body {
     background-color: white;
     width: 100%;
 
-    img {
+    .hero {
         width: 100%;
-        max-height: 468px;
-        z-index: 1;
+        height: 276px;
+        background: url(Images/tech.png);
+        background-size: cover;
+        background-position: center;
+        @media screen and (min-width: $larger-screen) {
+            height: 480px;
+        }
+        @media screen and (min-width: $medium-screen) {
+            height: 360px;
+        }
     }
 
     .container_1_buttons {
         display: flex;
         justify-content: center;
         margin:30px auto;
-        z-index: 2;
         @media screen and (min-width: $larger-screen) {
-            margin-top: 0;
-            
+            margin-top: 0;   
+        }
+    }
+
+    .hero_buttons {
+        @media screen and (min-width: $larger-screen) {
+            transform:translateY(-50%);            
         }
     }
 
@@ -148,6 +160,11 @@ body {
 
     .container_1_reviews{
         margin: 50px auto;
+        @media screen and (min-width: $larger-screen) {
+            display: flex;
+            justify-content: space-around;
+            margin: 100px;
+        }
     }
 
     .review_1 {
@@ -172,10 +189,30 @@ body {
 
     .review_image {
         max-width: 73px;
+        margin-left: 50px;
     }
 
     .review_2 {
         display: none;
+
+        @media screen and (min-width: $larger-screen) {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            font-weight: 400;
+            font-style: italic;
+            margin: auto 10px;
+
+            p {
+                margin: 0;
+                margin-right: 10px;
+            }
+    
+            small {
+                margin-top: 10px;
+                grid-column: 2/3;
+                font-size: 0.66em;
+            }
+        }
     }
 
     h2 {
@@ -203,6 +240,13 @@ body {
         justify-content: flex-start;
         overflow-x: scroll;
         gap: 30px;
+
+        @media screen and (min-width: $larger-screen) {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+            margin-bottom: 85px;
+        }
         
     }
 
@@ -273,12 +317,17 @@ body {
         align-items: center;
 
         p{
-            margin-top: 100px;
+            margin-top: 95px;
             text-align: center;
             font-size: 1.166em;
             font-weight: 400;
             margin-right: 15px;
             margin-left: 15px;
+
+            @media screen and (min-width: $larger-screen) {
+                margin-top: 125px;
+                width: 630px;
+            }
         }
         
         button {
@@ -318,6 +367,16 @@ body {
             color: white;
             background-color: $red;
         }
+
+        img {
+            width: 100%;
+        }
+
+        @media screen and ( min-width: $larger-screen) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
     }
 
     .right_container_2 {
@@ -327,8 +386,20 @@ body {
         margin-bottom: 70px;
         display: flex;
         flex-direction: column;
-        
 
+        @media screen and (min-width: $larger-screen) {
+            width: 420px;
+        }
+    }
+
+
+
+    .woman {
+
+        @media screen and (min-width: $larger-screen) {
+            grid-column: 2;
+            grid-row: 2;
+        }
     }
 
     .left_container_2 {
@@ -338,6 +409,12 @@ body {
         margin-bottom: 70px;
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width: $larger-screen) {
+            width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         
 
     }
