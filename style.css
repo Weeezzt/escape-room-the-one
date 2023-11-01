@@ -225,7 +225,7 @@ body button {
 @media screen and (min-width: 1000px) {
   .container_1 .cards_carousel {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 100px;
     margin-bottom: 85px;
   }
@@ -274,6 +274,11 @@ body button {
 }
 .container_1 .card_1 {
   margin-left: 52px;
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .card_1 {
+    margin-left: 0;
+  }
 }
 .container_1 .dark_container {
   margin-top: 70px;
@@ -329,8 +334,19 @@ body button {
   color: white;
   background-color: #E3170A;
 }
+@media screen and (min-width: 1000px) {
+  .container_1 .container_2 {
+    margin-bottom: 180px;
+  }
+}
 .container_1 .container_2 img {
   width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .container_2 img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 @media screen and (min-width: 1000px) {
   .container_1 .container_2 {
@@ -349,6 +365,9 @@ body button {
 @media screen and (min-width: 1000px) {
   .container_1 .right_container_2 {
     width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -379,19 +398,42 @@ footer {
   max-height: 566px;
   font-size: 0.75em;
 }
+@media screen and (min-width: 1000px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 470px;
+  }
+}
 footer .text_footer {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+}
+@media screen and (min-width: 1000px) {
+  footer .text_footer {
+    margin-top: 140px;
+  }
 }
 footer h3 {
   margin-top: 40px;
   margin-bottom: 0;
   font-weight: 700;
 }
+@media screen and (min-width: 1000px) {
+  footer h3 {
+    margin-top: 5px;
+  }
+}
 footer p {
   margin-top: 5px;
   font-weight: 400;
+}
+@media screen and (min-width: 1000px) {
+  footer p {
+    max-width: 420px;
+  }
 }
 footer ul {
   display: flex;
