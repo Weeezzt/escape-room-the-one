@@ -1,5 +1,5 @@
 
-$medium-screen: 750px;
+$medium-screen: 800px;
 $larger-screen: 1000px;
 $largest-screen: 1280px; 
 
@@ -36,7 +36,7 @@ body {
     }
     
 
-    div {
+    &__content {
         margin-top: auto;
         margin-bottom: auto;
         display: flex;
@@ -49,7 +49,7 @@ body {
         
     }
     
-    h1{
+    &__title {
         font-size: 1em;
         font-weight: 700;
         max-width: 78px;
@@ -61,7 +61,7 @@ body {
             font-size: 1.66em;
         }
     }
-    img {
+    &__logo {
         margin: auto 10px;
         width: 128px;
         @media screen and (min-width: $larger-screen) {
@@ -69,7 +69,7 @@ body {
         }
     }
         
-    ul{
+    &__nav-list {
             display: none;
             padding: 0;
             margin: auto 20px;
@@ -82,7 +82,7 @@ body {
             }
     }
 
-    li:hover {
+    &__nav-list-item:hover {
         color: $light;
         cursor: pointer;
     }
@@ -96,7 +96,7 @@ body {
     background-color: white;
     width: 100%;
 
-    .hero {
+    &__hero {
         width: 100%;
         height: 276px;
         background: url(Images/tech.png);
@@ -110,17 +110,17 @@ body {
         }
     }
 
-    .container_1_buttons {
+    &__buttons {
         display: flex;
         justify-content: center;
         margin:30px auto;
-        @media screen and (min-width: $larger-screen) {
+        @media screen and (min-width: $medium-screen) {
             margin-top: 0;   
         }
     }
 
-    .hero_buttons {
-        @media screen and (min-width: $larger-screen) {
+    .hero-buttons {
+        @media screen and (min-width: $medium-screen) {
             transform:translateY(-50%);            
         }
     }
@@ -136,7 +136,7 @@ body {
 
     .button_online{
         display: none;
-        @media screen and (min-width: $larger-screen) {
+        @media screen and (min-width: $medium-screen) {
             display: block;
             font-size: 1em;
             font-weight: 700;
@@ -154,12 +154,12 @@ body {
         color: $blue;
         font-size: 0.66em;
         font-weight: 700;
-        @media screen and (min-width: $larger-screen) {
+        @media screen and (min-width: $medium-screen) {
             display: none;
         }
     }
 
-    .container_1_reviews{
+    &__reviews{
         margin: 50px auto;
         @media screen and (min-width: $larger-screen) {
             display: flex;
@@ -188,9 +188,10 @@ body {
 
     }
 
-    .review_image {
+    .review__image {
         max-width: 73px;
         margin-left: 50px;
+        margin-right: 10px;
     }
 
     .review_2 {
@@ -223,16 +224,6 @@ body {
         font-size: 1.33em;
     }
 
-    .img_carousel {
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        width: 363px;
-    }
-
-    .star_img {
-        max-width: 16px;
-    }
-
     .cards_carousel {
         display: flex;
         width: 100%;
@@ -256,15 +247,21 @@ body {
         height: 0;
     }
 
-    .carousel_card {
+    .carousel-card {
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         border-radius: 8px;
         width: 363px;
         height: 446px;
+
+        &__img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 363px;
+        }
         
         
 
-        h3 {
+        &__title {
             margin-top: 5px;
             margin-bottom: 5px;
             margin-left: 10px;
@@ -272,7 +269,11 @@ body {
             font-weight: 400;
         }
 
-        p{  
+        &__star {
+            max-width: 16px;
+        }
+
+        &__description {  
             margin-left: 10px;
             margin-right: 10px;
             font-size: 0.75em;
@@ -280,13 +281,13 @@ body {
             
         }
 
-        small {
+        &__participants {
             font-weight: 400;
             margin-left: 10px;
             font-size: 0.583em;
         }
 
-        button {
+        &__button {
             float: right;
             margin-right: 10px;
             font-size: 0.66em;
@@ -321,7 +322,7 @@ body {
         color: white;
         align-items: center;
 
-        p{
+        &__text {
             margin-top: 95px;
             text-align: center;
             font-size: 1.166em;
@@ -335,7 +336,7 @@ body {
             }
         }
         
-        button {
+        &__button {
             font-size: 1em;
             font-weight: 700;
             width: 308px;
@@ -350,20 +351,52 @@ body {
 
     .container_2 {
 
+        &__right {
 
-        h2 {
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 70px;
+            display: flex;
+            flex-direction: column;
+    
+            @media screen and (min-width: $larger-screen) {
+                width: 420px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: auto;
+            }
+        }
+
+        &__left {
+
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 70px;
+            display: flex;
+            flex-direction: column;
+    
+            @media screen and (min-width: $larger-screen) {
+                width: 420px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+    
+        }
+
+        &__title {
             text-align: start;
             font-size: 1.33em;
             font-weight: 700;
         }
 
-        p{
+        &__description{
             margin-top: 0;
             font-size: 1em;
             font-weight: 400;
         }
 
-        button {
+        &__button {
             margin-top: 30px;
             font-size: 1em;
             font-weight: 700;
@@ -378,7 +411,7 @@ body {
             margin-bottom: 180px;
         }
 
-        img {
+        &__img {
             width: 100%;
             @media screen and (min-width: $larger-screen) {
                 height: 100%;
@@ -394,21 +427,7 @@ body {
         }
     }
 
-    .right_container_2 {
-
-        margin-right: 20px;
-        margin-left: 20px;
-        margin-bottom: 70px;
-        display: flex;
-        flex-direction: column;
-
-        @media screen and (min-width: $larger-screen) {
-            width: 420px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: auto;
-        }
-    }
+    
 
 
 
@@ -420,26 +439,11 @@ body {
         }
     }
 
-    .left_container_2 {
-
-        margin-right: 20px;
-        margin-left: 20px;
-        margin-bottom: 70px;
-        display: flex;
-        flex-direction: column;
-
-        @media screen and (min-width: $larger-screen) {
-            width: 420px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-
-    }
+    
 
 }
 
-footer {
+.footer {
     background-color: $dark;
     color: white;
     width: 100%;
@@ -453,7 +457,7 @@ footer {
         height: 470px;
     }
 
-    .text_footer {
+    &__text {
         display: flex;
         flex-direction: column;
         margin-left: 20px;
@@ -463,7 +467,7 @@ footer {
         
     }
 
-    h3 {
+    &__title {
         margin-top: 40px;
         margin-bottom: 0;
         font-weight: 700;
@@ -474,7 +478,7 @@ footer {
         
     }
 
-    p{
+    &__description {
         margin-top: 5px;
         font-weight: 400;
 
@@ -483,7 +487,7 @@ footer {
         }
     }
 
-    ul {
+    &__nav {
         display: flex;
         flex-direction: column;
         padding-left: 0;
@@ -491,7 +495,7 @@ footer {
         margin-top: 15px;
     }
 
-    a{
+    &__a {
         color: white;
         text-decoration: none;
         font-weight: 400;
