@@ -236,7 +236,7 @@ body button {
   overflow-x: scroll;
   gap: 30px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .container_1 .cards_carousel {
     display: flex;
     justify-content: center;
@@ -297,9 +297,17 @@ body button {
 .container_1 .card_1 {
   margin-left: 52px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .container_1 .card_1 {
     margin-left: 0;
+  }
+}
+.container_1 .card_3 {
+  margin-right: 52px;
+}
+@media screen and (min-width: 1200px) {
+  .container_1 .card_3 {
+    margin-right: 0;
   }
 }
 .container_1 .dark_container {

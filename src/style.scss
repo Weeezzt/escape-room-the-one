@@ -1,6 +1,6 @@
 $medium-screen: 800px;
 $larger-screen: 1000px;
-$largest-screen: 1280px;
+$largest-screen: 1200px;
 
 $dark: #011827;
 $light: #8ACFE5;
@@ -257,7 +257,7 @@ body {
         overflow-x: scroll;
         gap: 30px;
 
-        @media screen and (min-width: $larger-screen) {
+        @media screen and (min-width: $largest-screen) {
             display: flex;
             justify-content: center;
             margin-top: 100px;
@@ -332,8 +332,15 @@ body {
     .card_1 {
         margin-left: 52px;
 
-        @media screen and (min-width: $larger-screen) {
+        @media screen and (min-width: $largest-screen) {
             margin-left: 0;
+        }
+    }
+
+    .card_3 {
+        margin-right: 52px;
+        @media screen and (min-width:$largest-screen) {
+            margin-right: 0;
         }
     }
 
