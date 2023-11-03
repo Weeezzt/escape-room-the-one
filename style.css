@@ -169,6 +169,16 @@ body button {
   margin: 0;
   margin-right: 10px;
 }
+@media screen and (min-width: 800px) {
+  .container_1 .review_1 p {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .review_1 p {
+    margin-right: 10px;
+  }
+}
 .container_1 .review_1 small {
   margin-top: 10px;
   grid-column: 2/3;
@@ -178,6 +188,17 @@ body button {
   max-width: 73px;
   margin-left: 50px;
   margin-right: 10px;
+}
+@media screen and (min-width: 800px) {
+  .container_1 .review__image {
+    margin-left: 150px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container_1 .review__image {
+    margin-left: 50px;
+    margin-right: 10px;
+  }
 }
 .container_1 .review_2 {
   display: none;
@@ -419,7 +440,7 @@ body button {
 }
 .footer__title {
   margin-top: 40px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   font-weight: 700;
 }
 @media screen and (min-width: 1000px) {
@@ -428,7 +449,7 @@ body button {
   }
 }
 .footer__description {
-  margin-top: 5px;
+  margin-top: 0;
   font-weight: 400;
 }
 @media screen and (min-width: 1000px) {
@@ -441,7 +462,7 @@ body button {
   flex-direction: column;
   padding-left: 0;
   font-weight: 400;
-  margin-top: 15px;
+  margin-top: 0;
 }
 .footer__a {
   color: white;
@@ -452,7 +473,7 @@ body button {
   margin-top: 15px;
 }
 .footer .facebook {
-  margin-top: 15px;
+  margin-top: 0;
 }
 .footer .twitter {
   margin-bottom: 60px;
