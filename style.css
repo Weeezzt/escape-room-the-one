@@ -229,7 +229,7 @@ body button {
 }
 .container_1 .cards_carousel {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 500px;
   flex-direction: row;
   justify-content: flex-start;
