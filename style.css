@@ -84,7 +84,7 @@ body button {
 .container_1__hero {
   width: 100%;
   height: 276px;
-  background: url(Images/hero.png);
+  background: url(images/hero.png);
   background-size: cover;
   background-position: center;
 }
