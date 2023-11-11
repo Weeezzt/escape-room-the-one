@@ -7,12 +7,10 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='app.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -20,7 +18,26 @@
         <div class="header__content">
             <img src="images/esc.png" alt="ESC" class="header__logo">
             <h1 class="header__title">Hacker Escape Rooms</h1>
+            <div class="header__button-container">
+                <div class="header__hamburger"></div>
+                <div class="header__hamburger"></div>
+                <div class="header__hamburger"></div>
+            </div>
         </div>
+        <div class="white-div"> 
+        </div>
+        <div class="header__drop-down not-dropped-down">
+            <div class="cross-container">
+                <div class="drop-cross-1"></div>
+                <div class="drop-cross-2"></div>
+            </div>
+            <div class="drop-down-nav">
+                <h2 class="drop-online">Play online</h2>
+                <h2 class="drop-offline">Play offline</h2>
+                <h2 class="drop-story">The story</h2>
+                <h2 class="drop-contact">Contact</h2>
+            </div>
+        </div> 
         <ul class="header__nav-list">
             <li class="header__nav-list-item">Play online</li>
             <li class="header__nav-list-item">Play on-site</li>
@@ -144,5 +161,5 @@
         </div>
     </footer>
 </body>
-
+<script src='app.js'></script>
 </html>

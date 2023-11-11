@@ -1,4 +1,5 @@
 body {
+  z-index: 1;
   margin: 0;
   padding: 0;
   font-family: "roboto", sans-serif;
@@ -29,7 +30,6 @@ body button {
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
-  justify-content: flex-start;
 }
 @media screen and (min-width: 1000px) {
   .header__content {
@@ -58,6 +58,98 @@ body button {
   .header__logo {
     margin: 20px;
   }
+}
+.header__button-container {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-bottom: auto;
+}
+@media screen and (min-width: 1000px) {
+  .header__button-container {
+    display: none;
+  }
+}
+.header__hamburger {
+  width: 50px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+.header__drop-down {
+  display: none;
+  flex-direction: column;
+  background-color: #011827;
+  position: fixed;
+  padding: 0;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+}
+.header .white-div-dropped {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation: fadeIn 0.2s linear 0s 1 normal forwards;
+}
+@keyframes fadeIn {
+  from {
+    background-color: #ffffff;
+    opacity: 0;
+  }
+  to {
+    background-color: #ffffff;
+    opacity: 0.6;
+  }
+}
+.header .dropped-down {
+  display: flex;
+  animation: fadeInSize 0.1s linear 1 normal forwards;
+}
+@keyframes fadeInSize {
+  0% {
+    opacity: 0;
+    scale: 60%;
+  }
+  100% {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.header .dont-display {
+  display: none;
+}
+.header .cross-container {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.header .drop-cross-1 {
+  border-radius: 3px;
+  width: 50px;
+  height: 6px;
+  transform: translate(0, 6px) rotate(-45deg);
+  background-color: #FFF;
+}
+.header .drop-cross-2 {
+  border-radius: 3px;
+  width: 50px;
+  height: 6px;
+  transform: rotate(45deg);
+  background-color: #FFF;
+}
+.header .drop-down-nav {
+  gap: 50px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header__nav-list {
   display: none;
